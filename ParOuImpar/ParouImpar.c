@@ -3,7 +3,7 @@ número for par ou 0 se o número for ímpar.*/
 
 #include <stdio.h>
 
-int par, impar;
+
 int parOrImpar(int);
 
 int main(void){
