@@ -1,0 +1,8 @@
+Questão 1 lista 6
+
+Escreva uma função em C que receba como parâmetros os coeficientes ​ a ​ , ​ b e ​ c que
+definem uma equação no formato ​ a ​ x 2 ​ + ​ b ​ x + ​ c ​ , com ​ a ≠ 0. A função deverá retornar 0 se a
+equação não possuir raízes reais (Δ < 0), 1 se houver uma única raiz (Δ = 0), ou 2 se
+houverem duas raízes reais (Δ > 0). Nos casos em que houver raiz(es) real(is), esta(s)
+deverá(ão) ser retornadas como parâmetros, conforme protótipo da função descrito a seguir:
+int raizes(float a, float b, float c, float *raiz1, float *raiz2);
