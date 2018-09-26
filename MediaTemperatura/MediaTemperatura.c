@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #define N 1000
 
@@ -19,11 +18,11 @@ int main(void){
 	}
 	leTemperaturas(n,vetor); 
 	
-	printf("vetor preenchimento\n");
 	for (int i =0 ; i<n; i++){
 		printf("%.2f\t", vetor[i]);
 	}
 	calculaMedia(n, vetor);
+	calculaVariancia(n, vetor, med);
 }
 
 	
@@ -45,5 +44,11 @@ float calculaMedia (int n, float *v){
 }
 
 float calculaVariancia(int n, float *v, float m){
-
+	float var= 0.0f;
+	for(int i =0; i<n;i++){
+		var+= (vetor[i] - med) * (vetor[i] - med);
+	}
+	var = var/n;
+	printf("\nA variancia das temperaturas foi: %.2f°c", var); 
+	return 0;
 }
